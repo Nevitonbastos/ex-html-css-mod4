@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMULÁRIO</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif ;
+        }
+        form div{
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <div>
+            <label for="icor">Cor :</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </div>
+
+        <div>
+            <label for="inivel">Nìvel de satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="'1" max="5">
+        </div>
+
+        <div>
+            <label for="ifoto">Foto de Perfil</label>
+            <input type="file" name="foto" id="ifoto" max="1">
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
 </body>
 </html>
